@@ -1,0 +1,17 @@
+:root {
+    --color-fondo: #1758F1;
+    --color-total: #f8f9fa;
+    --color-texto: #faf9f9;
+}
+
+.main-content {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+.sidebar-nav {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+}
