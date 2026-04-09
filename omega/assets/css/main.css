@@ -1,6 +1,6 @@
 :root {
     --color-fondo: #1758F1;
-    --color-blanco: #f8f9fa;
+    --color-blanco: #fffffa;
     --color-titulos: #faf9f9;
     --color-texto: #000000;
     --color-fondo-texto:#f0f7ff;
@@ -21,6 +21,8 @@
     position: sticky;
     top: 0;
     overflow-y: auto;
+    border-left: 1px;
+    padding-left: 1.5rem;
 }
 
 /*Diseño del Menu lateral*/
@@ -41,7 +43,7 @@
 /*Diseño de Introduccion al Sistema Operativo*/
 
 .card-body {
-    background-color: var(--color-fondo-texto);
+    background-color: var(--color-blanco);
     color: var(--color-texto);
 }
 
@@ -68,7 +70,7 @@
 /*Diseño de Arquitectura del Sistema Operativo*/
 
 .diagrama-box {
-    background-color: var(--color-blanco)
+    background-color: var(--color-azul-claro);
 }
 
 .layer-box {
@@ -97,3 +99,19 @@
     transform: scale(1.02);
 }
 
+/*Diseño del Kernel*/
+.kernel-container {
+    background-color: var(--color-fondo);
+}
+
+.kernel-item {
+    background-color: var(--color-azul-medio);
+    border: 1px;
+    transition: background 0.3s;
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+.kernel-item:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
