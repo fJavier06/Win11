@@ -28,7 +28,7 @@
 
                     <!--INTRODUCCION AL SISTEMA OPERATIVO-->
                     <div class="bg-white p-5">
-                        <section class="info-card rounded-4 mt-4">
+                        <section id="introduccion" class="info-card rounded-4 mt-4">
                             <header class="card-header p-3">
                                 <i class="bi bi-layers mb-2"></i><span class="fw-medium">Introduccion al sistema
                                     Operativo</span>
@@ -92,52 +92,106 @@
                                 </div>
                             </div>
                         </section>
+
+                        <!--ARQUITECTURA DEL SISTEMA OPERATIVO-->
+                        <section id="arquitectura" class="info-cad rounded-4 mt-5">
+                            <header class="card-header p-3">
+                                <i class="bi bi-cpu mb-2"></i>
+                                <span class="fw-medium">Arquitectura del Sistema Operativo</span>
+                            </header>
+
+                            <div class="card-body p-4">
+                                <h2 class="h4 fw-bold mb-3">Relación entre Hardware y Software</h2>
+                                <p>El sistema operativo funciona como un puente entre el hardware físico (componentes de
+                                    la computadora) y el software (programas y aplicaciones). Esta arquitectura en capas
+                                    permite que las aplicaciones no necesiten conocer los detalles técnicos del
+                                    hardware.</p>
+
+                                <div class="diagrama-box rounded-4 p-5 my-4 text-center">
+                                    <p class="text-primary fw-bold mb-4">Diagrama de Capas</p>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <div class="layer-box layer-usuario p-3 rounded-3 shadow-sm w-50">
+                                            Usuario
+                                        </div>
+                                        <i class="bi bi-arrow-down my-2 fs-4 text-secondary"></i>
+
+                                        <div class="layer-box layer-aplicacion p-3 rounded-3 shadow-sm w-50">
+                                            Aplicación
+                                        </div>
+                                        <i class="bi bi-arrow-down my-2 fs-4 text-secondary"></i>
+
+                                        <div class="layer-box layer-so p-3 rounded-3 shadow-sm w-50">
+                                            Sistema Operativo
+                                        </div>
+                                        <i class="bi bi-arrow-down my-2 fs-4 text-secondary"></i>
+
+                                        <div class="layer-box layer-hardware p-3 rounded-3 shadow-sm w-50">
+                                            Hardware
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="p-3 rounded-3 h-100" style="background-color: #f0f7ff;">
+                                            <h4 class="h6 fw-bold text-primary">Hardware</h4>
+                                            <p class="small mb-0">Componentes físicos como CPU, memoria RAM, disco duro,
+                                                tarjeta gráfica, teclado y mouse.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 rounded-3 h-100" style="background-color: #f0f7ff;">
+                                            <h4 class="h6 fw-bold text-primary">Software</h4>
+                                            <p class="small mb-0">Programas y aplicaciones que el usuario utiliza, como
+                                                navegadores, editores de texto y juegos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <!--¿QUE ES EL KERNEL?-->
+                        <section>
+
+                        </section>
+
+                        <!--INTERACCION DE APLICACIONES-->
+                        <section>
+
+                        </section>
+
+                        <!--PROCESOS Y MULTITAREAS-->
+                        <section>
+
+                        </section>
+
+                        <!--GESTION DE MEMORIA-->
+                        <section>
+
+                        </section>
+
+                        <!--SISTEMAS DE ARCHIVOS-->
+                        <section>
+
+                        </section>
+
+                        <!--CONTROL DE DISPOSITIVOS-->
+                        <section>
+
+                        </section>
+
+                        <!--SEGURIDAD EN SO-->
+                        <section>
+
+                        </section>
+
+                        <!--COMPARACION DE SISTEMAS OPERATIVOS-->
+                        <section>
+
+                        </section>
                     </div>
 
-                    <!--ARQUITECTURA DEL SISTEMA OPERATIVO-->
-                    <section>
-
-                    </section>
-
-                    <!--¿QUE ES EL KERNEL?-->
-                    <section>
-
-                    </section>
-
-                    <!--INTERACCION DE APLICACIONES-->
-                    <section>
-
-                    </section>
-
-                    <!--PROCESOS Y MULTITAREAS-->
-                    <section>
-
-                    </section>
-
-                    <!--GESTION DE MEMORIA-->
-                    <section>
-
-                    </section>
-
-                    <!--SISTEMAS DE ARCHIVOS-->
-                    <section>
-
-                    </section>
-
-                    <!--CONTROL DE DISPOSITIVOS-->
-                    <section>
-
-                    </section>
-
-                    <!--SEGURIDAD EN SO-->
-                    <section>
-
-                    </section>
-
-                    <!--COMPARACION DE SISTEMAS OPERATIVOS-->
-                    <section>
-
-                    </section>
                 </div>
 
 
@@ -145,8 +199,8 @@
                     <h5 class="fw-bold mb-1">Menu</h5>
 
                     <nav class="nav flex-column">
-                        <a class="nav-link custom-link" href"#">Introduccion al Sistema Operativo</a>
-                        <a class="nav-link custom-link" href"#">Arquitectura del Sistema Operativo</a>
+                        <a class="nav-link custom-link" href"id=">Introduccion al Sistema Operativo</a>
+                        <a class=" nav-link custom-link" href"#">Arquitectura del Sistema Operativo</a>
                         <a class="nav-link custom-link" href"#">¿Que es el Kernel?</a>
                         <a class="nav-link custom-link" href"#">Interaccion de Aplicaciones</a>
                         <a class="nav-link custom-link" href"#">Proecesos y Multitareas</a>

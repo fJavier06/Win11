@@ -4,12 +4,16 @@
     --color-titulos: #faf9f9;
     --color-texto: #000000;
     --color-fondo-texto:#f0f7ff;
-    --color-azul: #e0eeff;
+    --color-azul-claro: #e0eeff;
+    --color-azul-medio: #6da9f2;
+    --color-azul-fuerte: #3b71db;
+    --color-azul-oscuro: #2441b3;
 }
 
 .main-content {
     background-color: var(--color-fondo);
     color: var(--color-titulos);
+    text-align: center;
 }
 
 .sidebar-nav {
@@ -48,7 +52,7 @@
 }
 
 .funciones-box{
-    background-color: var(--color-azul);
+    background-color: var(--color-azul-claro);
     border: 1px;
 }
 
@@ -59,5 +63,36 @@
 
 .device-card:hover {
     transform: translateY(-5px);
+}
+
+/*Diseño de Arquitectura del Sistema Operativo*/
+
+.diagrama-box {
+    background-color: var(--color-blanco)
+
+.layer-box {
+    color: var(--color-blanco);
+    font-weight: 500;
+    transition: transform 0.2s;
+}
+
+.layer-usuario {
+    background-color: var(--color-fondo);
+}
+
+.layer-aplicacion {
+    background-color: var(--color-azul-medio);
+}
+
+.layer-so {
+    background-color: var(--color-azul-fuerte);
+}
+
+.layer-hardware {
+    background-color: var(--color-azul-oscuro);
+}
+
+.layer-box:hover {
+    transform: scale(1.02);
 }
 
