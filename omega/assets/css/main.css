@@ -3,6 +3,8 @@
     --color-blanco: #f8f9fa;
     --color-titulos: #faf9f9;
     --color-texto: #000000;
+    --color-fondo-texto:#f0f7ff;
+    --color-azul: #e0eeff;
 }
 
 .main-content {
@@ -20,8 +22,8 @@
 /*Diseño del Menu lateral*/
 .custom-link {
     color: var(--color-texto);
-    font-size: 0.9rem;
-    padding: 12px 15px;
+    font-size: 1rem;
+    padding: 40px 25px;
     display: flex;
     align-items: center;
     border-radius: 8px;
@@ -30,5 +32,32 @@
 .custom-link:hover {
     background-color: var(--color-fondo);
     color: var(--color-blanco);
+}
+
+/*Diseño de Introduccion al Sistema Operativo*/
+
+.card-body {
+    background-color: var(--color-fondo-texto);
+    color: var(--color-texto);
+}
+
+.card-header {
+    background-color: var(--color-fondo-texto);
+    color: var(--color-texto);
+    border-bottom: 1px;
+}
+
+.funciones-box{
+    background-color: var(--color-azul);
+    border: 1px;
+}
+
+.device-card {
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.device-card:hover {
+    transform: translateY(-5px);
 }
 
