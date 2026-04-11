@@ -59,8 +59,7 @@
 }
 
 .device-card {
-    transition: transform 0.2s;
-    cursor: pointer;
+    transform: scale(1.02);
 }
 
 .device-card:hover {

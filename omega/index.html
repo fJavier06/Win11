@@ -21,8 +21,8 @@
                             <p class="lead">Conceptos basicos y funcionamiento</p>
                         </header>
                         <section>
-                            <img src="assets/img/Titulo-win11.jpg" alt="Logotipo Windows 11"
-                                class="img-fluid rounded-4" style="max-width: 800px;">
+                            <img src="assets/img/Titulo-win11.jpg" alt="Logotipo Windows 11" class="img-fluid rounded-4"
+                                style="max-width: 800px;">
                         </section>
                     </div>
 
@@ -216,13 +216,41 @@
                         </section>
 
                         <!--INTERACCION DE APLICACIONES-->
-                        <section>
-
+                        <section id="Interaccion" class="info-card rounded-4 mt-5">
+                            <header class="card-header p-3">
+                                <i class="bi bi-lightning-charge mb-2"></i>
+                                <span class="fw-medium">Interacción de Aplicaciones con el Sistema Operativo</span>
+                            </header>
+                            <div class="card-body p-4">
+                                <h2 class="h4 fw-bold mb-3">Uso de APIs (Interfaz de Programación)</h2>
+                                <p>Las aplicaciones no pueden acceder directamente al hardware por razones de seguridad.
+                                    En su lugar, utilizan APIs (Application Programming Interfaces) que son funciones
+                                    proporcionadas por el sistema operativo. Cuando una aplicación necesita realizar una
+                                    tarea (como guardar un archivo o imprimir), llama a una API del sistema operativo.
+                                </p>
+                                <img src="assets/img/Diagrama.png" alt="Diagrama de flujo">
+                            </div>
                         </section>
 
                         <!--PROCESOS Y MULTITAREAS-->
-                        <section>
-
+                        <section id="procesos" class="info-card rounded-4 mt-5">
+                            <header class="card-header p-3">
+                                <i class="bi bi-lightning-charge mb-2"></i>
+                                <span class="fw-medium">Procesos y Multitarea</span>
+                            </header>
+                            <div class="card-body p-4">
+                                <h2 class="h4 fw-bold mb-3">¿Qué es un proceso?</h2>
+                                <p>Un proceso es un programa en ejecución. Cada vez que abres una aplicación (como
+                                    Google Chrome o Spotify), el sistema operativo crea un proceso para ella. Un proceso
+                                    incluye el código del programa, sus datos y los recursos que necesita (memoria,
+                                    archivos abiertos, etc.).
+                                </p>
+                                <h2 class="h4 fw-bold mb-3">¿Qué es la multitarea?</h2>
+                                <p>La multitarea es la capacidad del sistema operativo de ejecutar múltiples procesos
+                                    aparentemente al mismo tiempo. En realidad, el CPU cambia muy rápidamente entre
+                                    procesos, dando la ilusión de que todos funcionan simultáneamente.
+                                </p>
+                            </div>
                         </section>
 
                         <!--GESTION DE MEMORIA-->
@@ -261,8 +289,8 @@
                         <a class="nav-link custom-link" href="#introduccion">Introduccion al Sistema Operativo</a>
                         <a class=" nav-link custom-link" href="#arquitectura">Arquitectura del Sistema Operativo</a>
                         <a class="nav-link custom-link" href="#kernel">¿Que es el Kernel?</a>
-                        <a class="nav-link custom-link" href="#">Interaccion de Aplicaciones</a>
-                        <a class="nav-link custom-link" href="#">Proecesos y Multitareas</a>
+                        <a class="nav-link custom-link" href="#Interaccion">Interaccion de Aplicaciones</a>
+                        <a class="nav-link custom-link" href="#procesos">Proecesos y Multitareas</a>
                         <a class="nav-link custom-link" href="#">Gestion de Memoria</a>
                         <a class="nav-link custom-link" href="#">Sistemas de Archivos</a>
                         <a class="nav-link custom-link" href="#">Control de dispositivos</a>
