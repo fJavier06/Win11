@@ -29,7 +29,7 @@
 .custom-link {
     color: var(--color-texto);
     font-size: 1rem;
-    padding: 40px 25px;
+    padding: 16px 5px;
     display: flex;
     align-items: center;
     border-radius: 8px;

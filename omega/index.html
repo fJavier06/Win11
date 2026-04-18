@@ -7,6 +7,7 @@
     <title>Windows</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/aos/aos.css">
 </head>
 
 <body>
@@ -22,13 +23,13 @@
                         </header>
                         <section>
                             <img src="assets/img/Titulo-win11.jpg" alt="Logotipo Windows 11" class="img-fluid rounded-4"
-                                style="max-width: 800px;">
+                                style="max-width: 600px;">
                         </section>
                     </div>
 
                     <!--INTRODUCCION AL SISTEMA OPERATIVO-->
                     <div class="bg-white p-5">
-                        <section id="introduccion" class="info-card rounded-4 mt-4">
+                        <section id="introduccion" class="info-card rounded-4 mt-4" data-aos="fade-up">
                             <header class="card-header p-3">
                                 <i class="bi bi-layers mb-2"></i><span class="fw-medium">Introduccion al sistema
                                     Operativo</span>
@@ -94,7 +95,7 @@
                         </section>
 
                         <!--ARQUITECTURA DEL SISTEMA OPERATIVO-->
-                        <section id="arquitectura" class="info-cad rounded-4 mt-5">
+                        <section id="arquitectura" class="info-cad rounded-4 mt-5" data-aos="fade-down">
                             <header class="card-header p-3">
                                 <i class="bi bi-cpu mb-2"></i>
                                 <span class="fw-medium">Arquitectura del Sistema Operativo</span>
@@ -267,7 +268,7 @@
                         </section>
 
                         <!--GESTION DE MEMORIA-->
-                        <section>
+                        <section id="gestion" class="info-card rounded-4 mt-5">
                             <header class="card-header p-3">
                                 <i class="bi bi-lightning-charge mb-2"></i>
                                 <span class="fw-medium">Gestion de Memoria</span>
@@ -280,6 +281,17 @@
                                     usando activamente. Cuando apagas la computadora, todo lo que hay en la RAM se
                                     borra.
                                 </p>
+                                <h2 class="h4 fw-bold mb-3">Cómo gestiona el SO la memoria</h2>
+                                <p>El sistema operativo decide qué aplicaciones pueden usar la RAM y cuánta cantidad.
+                                    Asigna bloques de memoria a cada proceso y se asegura de que un programa no pueda
+                                    acceder a la memoria de otro (por seguridad).
+                                </p>
+                                <h2 class="h4 fw-bold mb-3">Memoria Virtual</h2>
+                                <p>Cuando la RAM se llena, el sistema operativo usa una técnica llamada "memoria
+                                    virtual". Mueve temporalmente datos menos usados de la RAM al disco duro, liberando
+                                    espacio para aplicaciones activas. Aunque el disco es más lento, esto permite
+                                    ejecutar más programas de los que cabrian en la RAM física.</p>
+                                <img src="assets/img/Diagrama de ram.png" alt="Diagrama de ram vs memoria virtual">
                             </div>
 
                         </section>
@@ -317,7 +329,7 @@
                         <a class="nav-link custom-link" href="#kernel">¿Que es el Kernel?</a>
                         <a class="nav-link custom-link" href="#Interaccion">Interaccion de Aplicaciones</a>
                         <a class="nav-link custom-link" href="#procesos">Proecesos y Multitareas</a>
-                        <a class="nav-link custom-link" href="#">Gestion de Memoria</a>
+                        <a class="nav-link custom-link" href="#gestion">Gestion de Memoria</a>
                         <a class="nav-link custom-link" href="#">Sistemas de Archivos</a>
                         <a class="nav-link custom-link" href="#">Control de dispositivos</a>
                         <a class="nav-link custom-link" href="#">Seguridad en el SO</a>
@@ -329,7 +341,10 @@
     </main>
 </body>
 
-<script src="omega/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/aos/aos.js">
+    aos.init();
+</script>
 
 
 </html>
