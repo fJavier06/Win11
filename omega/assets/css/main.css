@@ -3,7 +3,7 @@
     --color-blanco: #fffffa;
     --color-titulos: #faf9f9;
     --color-texto: #000000;
-    --color-fondo-texto:#f0f7ff;
+    --color-fondo-texto: #f0f7ff;
     --color-azul-claro: #e0eeff;
     --color-azul-medio: #6da9f2;
     --color-azul-fuerte: #3b71db;
@@ -35,6 +35,20 @@
     border-radius: 8px;
 }
 
+.navMobile {
+    display: none;
+}
+
+@media(max-width:576px){
+    #desknav {
+        display: none;
+    }
+
+    .navMobile {
+        display: block;
+    }
+}
+
 .custom-link:hover {
     background-color: var(--color-fondo);
     color: var(--color-blanco);
@@ -53,7 +67,7 @@
     border-bottom: 1px;
 }
 
-.funciones-box{
+.funciones-box {
     background-color: var(--color-azul-claro);
     border: 1px;
 }
